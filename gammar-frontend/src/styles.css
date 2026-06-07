@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-main: #ffffff;
+    --bg-secundario: #f4f4f4;
+    --bg-terciario: #e5e5e5;
+    --texto-principal: #000000;
+    --texto-secundario: #555555;
+    --acento: #000000; /* Botones negros, típico de minimalismo premium */
+    --acento-hover: #333333;
+    --oferta: #e02020;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 999px;
+    --font-principal: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-principal);
+    color: var(--texto-principal);
+    background-color: var(--bg-main);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Base Utility Classes para Botones Premium */
+.btn-premium {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-premium:hover {
+    background-color: #333333;
+    transform: translateY(-1px);
+}
+
+.btn-premium-outline {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-premium-outline:hover {
+    background-color: #f4f4f4;
+}

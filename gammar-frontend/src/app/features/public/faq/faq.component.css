@@ -1,0 +1,123 @@
+.static-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+.top-nav {
+    padding: 20px 5vw;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.btn-back:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.page-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.lead-text {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.faq-item {
+    background: #f8fafc;
+    padding: 24px;
+    border-radius: 12px;
+    border-left: 4px solid #0047AB;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.faq-answer {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+}
+
+.contact-box {
+    margin-top: 50px;
+    padding: 30px;
+    background: #eff6ff;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: #1e3a8a;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+    color: #3b82f6;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #0047AB;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #003380;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        margin: 20px;
+        padding: 24px;
+    }
+}
